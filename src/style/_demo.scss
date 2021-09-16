@@ -1,0 +1,46 @@
+$cl-card-background: #f4f4f4;
+
+.section {
+  background-color: $cl-white !important;
+  padding: 12.8rem 0;
+}
+
+.content-container {
+  display: grid;
+  width: 100%;
+  max-width: 118.4rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 4rem;
+}
+
+.card {
+  grid-column-end: span 4;
+  background-color: $cl-card-background !important;
+}
+
+.card__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.card__body {
+  display: grid;
+  row-gap: 1.2rem;
+  padding: 1.6rem;
+}
+
+.card__header-image {
+  max-width: 100%;
+  display: block;
+}
+
+.card__content {
+  font-size: 1.4rem;
+  line-height: 1.71;
+}
