@@ -5,8 +5,8 @@
   "scripts": {
     "start": "parcel serve src/index.html",
     "prebuild": "rm -rf dist",
-    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
-    "watch": "cross-env NODE_ENV=production parcel watch src/index.html --public-url ."
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --dist-dir ./docs/ --public-url .",
+    "watch": "cross-env NODE_ENV=production parcel watch src/index.html --dist-dir ./docs/ --public-url ."
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.0-nightly.751",
